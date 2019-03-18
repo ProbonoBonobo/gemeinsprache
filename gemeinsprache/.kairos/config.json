@@ -1,0 +1,1 @@
+{"timestamps": {"human": "%A, %B %-d, %Y at %-I:%M%p", "human_fixedlength": "%a, %b %d, %Y at %I:%M%p", "iso8601": "%Y%m%dT%H%M%SZ", "iso8601_dateonly": "%Y%m%d", "iso8601_microseconds": "%Y%m%dT%H%M%S.%fZ", "generic": "%c"}}

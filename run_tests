@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import os
+from watchgod import watch, run_process
+import subprocess
+
+def run_tests(changes=None):
+    print(f"Changes: {changes}")
+    out = subprocess.run("pytest --cov=. --cov-report=html", shell=True)
+    print(out)
+    if out.returncode:
+        print(f"Error running tests: {out.__dict__}")
+    else:
+        
+        print(f"Reloaded: {changes}")
+
+for changes in watch('.'):
+    run_process('.', run_tests)
